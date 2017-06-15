@@ -41,6 +41,9 @@ in lib // (rec {
   # mod 1 10 == 1
   mod = base: int: base - (int * (builtins.div base int));
 
+  even = x: mod x 2 == 0;
+  odd  = x: mod x 2 == 1;
+
   cconf = import ./config.nix;
 
   # Function to generate DHT key
