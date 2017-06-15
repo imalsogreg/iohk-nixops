@@ -51,6 +51,7 @@ let
     "--log-config ${./../static/csl-logging.yaml}"
     "--logs-prefix /var/lib/cardano-node"
     (optionalString (!cfg.enableP2P) "--kademlia-explicit-initial --disable-propagation ${smartGenPeer}")
+    (optionalString cfg.staticPeers "--static-peers")
     (genPeers cfg.initialPeers)
   ];
 in {
