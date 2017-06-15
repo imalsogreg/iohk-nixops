@@ -17,7 +17,7 @@ in lib // (rec {
   mergeNodes = mergeAttrs;
   mergeAttrs = nodes: lib.foldAttrs (a: b: a) [] nodes;
 
-  mkNodes = nodes: config: lib.mapAttrs (name: value: config value.i value.region) nodes;
+  mkNodes = nodes: config: lib.mapAttrs (name: value: config value.i value.region value.innerTier) nodes;
   mkNodeIPs = nodes: accessKeyId: lib.mapAttrs' (name: value:
       { name = "nodeip${toString value.i}";
         value = { inherit (value) region; inherit accessKeyId;};

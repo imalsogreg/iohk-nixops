@@ -26,4 +26,4 @@ in {
       });
     });
   };
-} // (mkNodes nodes (i: r: nodeStagConf))
+} // (mkNodes nodes (i: r: innerTier: nodeStagConf))

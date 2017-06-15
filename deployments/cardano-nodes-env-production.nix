@@ -14,4 +14,4 @@ in {
       cardano_node_process = mkMonitor cardano_node_process_monitor;
     });
   };
-} // (mkNodes nodes (i: r: nodeProdConf))
+} // (mkNodes nodes (i: r: innerTier: nodeProdConf))

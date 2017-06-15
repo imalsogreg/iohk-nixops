@@ -1,6 +1,6 @@
 with (import ./../lib.nix);
 
-testIndex: region:
+testIndex: region: innerTier:
   { config, resources, pkgs, nodes, options, ... }:
     let
       cfg = config.services.cardano-node;
