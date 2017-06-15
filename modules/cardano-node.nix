@@ -60,6 +60,7 @@ in {
       port = mkOption { type = types.int; default = 3000; };
       systemStart = mkOption { type = types.int; default = 0; };
 
+      staticPeers = mkOption { type = types.bool; default = false; };
       enableP2P = mkOption { type = types.bool; default = false; };
       supporter = mkOption { type = types.bool; default = false; };
       dhtKey = mkOption {

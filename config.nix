@@ -27,4 +27,7 @@ rec {
 
   productionMode = true;
   systemStart = 1492428658;
+
+  # Use '--static-peers'
+  tieringEnabled = true;
 }

@@ -12,6 +12,7 @@ testIndex: region: innerTier:
       enable = true;
       testIndex = testIndex;
       port = cconf.nodePort;
+      staticPeers = innerTier == true && cconf.tieringEnabled == true;
       inherit (cconf) enableP2P genesisN slotDuration networkDiameter mpcRelayInterval;
       inherit (cconf) totalMoneyAmount bitcoinOverFlat productionMode systemStart richPoorDistr;
     };
