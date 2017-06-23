@@ -3448,8 +3448,8 @@ self: {
           pname = "exceptions";
           version = "0.8.3";
           sha256 = "1gl7xzffsqmigam6zg0jsglncgzxqafld2p6kb7ccp9xirzdjsjd";
-          revision = "1";
-          editedCabalFile = "fc13261461399b8610d60468757f2fc0a62ed660dee998f4329e33dd76d2191b";
+          revision = "2";
+          editedCabalFile = "dc2b4ed2a3de646d8ff599ff972e25b3a1a5165ead3a46ff84a3d443814c85ee";
           libraryHaskellDepends = [
             base
             mtl
@@ -5454,6 +5454,8 @@ self: {
           pname = "natural-transformation";
           version = "0.4";
           sha256 = "1by8xwjc23l6pa9l4iv7zp82dykpll3vc3hgxk0pgva724n8xhma";
+          revision = "1";
+          editedCabalFile = "83bedd2c7b0e4f8819753d2075036d99483d33bfdd3ba8889cf61fa05fa89ce9";
           libraryHaskellDepends = [
             base
           ];
